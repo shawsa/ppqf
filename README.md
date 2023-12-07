@@ -7,6 +7,7 @@ I haven't proven convergence orders, but I expect them to be prescribed by the s
 
 # Some Sample QF on equally spaced points.
 For even orders, the weights are symmetric, and far enough from the boundary all weights are $\frac{1}{h}$.
+
 For $\mathcal{O}(h^2)$:
 $\frac{1}{2h} \big[ 1 \ 2 \ 2 \ 2 \ 2 ...$
 
@@ -26,3 +27,22 @@ Over each subdomain ($(x_i, x_{i+1})$) we select the $k$ closest nodes to this i
 We interpolate the stencil points with a dregree $k-1$ polynoial, then restrict the domain of this polynomial to the subdomain.
 
 These quadrature rules are equivalent to integrating exactly this resulting interpolant.
+
+# Not Splines
+These interpolants are not the traditional splines.
+Like splines, they are continuous piecewise polynomials.
+Unlike splines, they do not enforce smoothness.
+The figure below compares a function to the local interpolant (our interpolant) of degree 3 and also to a cubic spline with not-a-not boundary conditions.
+It also plots the first and second derivatives of each of these functions.
+![Not Splines](images/not_splines.png)
+Note that the second derivative of the local interpolant is discontinuous at some of the breakpoints.
+This demonstrates that it is distinct from splines.
+
+We can also compare the cardinal basis for the space of interpolants to the cardinal spline basis.
+![Cardinal Basis](images/cardinal_basis.png)
+We see from the cardinal basis that the local interpolant is not smooth over the breakpoints.
+It is not easy to see from this plot, but the cubic spline basis functions are supported over the entire interval.
+A consequence of this is that the interpolant over each piece depends on all of the function values over the entire interval.
+In contrast, the cardinal basis functions for local interpolation are supported only over a continguous set of $k-$ sub domains.
+This means that an individual piece of the interpolant is only sensitive to nearby function values.
+It is also the reason for the repeated quadrature weights far from the boundary, as the cardinal basis functions are simply translates of one another.
