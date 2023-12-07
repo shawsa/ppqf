@@ -42,7 +42,7 @@ This demonstrates that it is distinct from splines.
 
 We can also compare the cardinal basis for the space of interpolants to the cardinal spline basis.
 
-[Cardinal Basis](images/cardinal_basis.png)
+![Cardinal Basis](images/cardinal_basis.png)
 
 We see from the cardinal basis that the local interpolant is not smooth over the breakpoints.
 It is not easy to see from this plot, but the cubic spline basis functions are supported over the entire interval.
