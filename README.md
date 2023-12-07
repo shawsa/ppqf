@@ -37,12 +37,16 @@ It also plots the first and second derivatives of each of these functions.
 <!---
 ![Not Splines](images/not_spline.png)
 --->
+<img src="images/not_spline.png"/>
 Note that the second derivative of the local interpolant is discontinuous at some of the breakpoints.
 This demonstrates that it is distinct from splines.
 
 We can also compare the cardinal basis for the space of interpolants to the cardinal spline basis.
 
+<!---
 ![Cardinal Basis](images/cardinal_basis.png)
+--->
+<img src="images/cardinal_basis.png"/>
 
 We see from the cardinal basis that the local interpolant is not smooth over the breakpoints.
 It is not easy to see from this plot, but the cubic spline basis functions are supported over the entire interval.
