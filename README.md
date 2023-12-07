@@ -34,13 +34,13 @@ Like splines, they are continuous piecewise polynomials.
 Unlike splines, they do not enforce smoothness.
 The figure below compares a function to the local interpolant (our interpolant) of degree 3 and also to a cubic spline with not-a-not boundary conditions.
 It also plots the first and second derivatives of each of these functions.
-<img src="./images/not_spline.png"/>
+<img src="/images/not_spline.png"/>
 Note that the second derivative of the local interpolant is discontinuous at some of the breakpoints.
 This demonstrates that it is distinct from splines.
 
 We can also compare the cardinal basis for the space of interpolants to the cardinal spline basis.
 
-<img src="./images/cardinal_basis.png"/>
+<img src="/images/cardinal_basis.png"/>
 
 We see from the cardinal basis that the local interpolant is not smooth over the breakpoints.
 It is not easy to see from this plot, but the cubic spline basis functions are supported over the entire interval.
@@ -53,13 +53,13 @@ It is also the reason for the repeated quadrature weights far from the boundary,
 I've tested convergence of the even order equally spaced quadrature formulae above on several test functions. 
 
 We see that convergence is roughly $\mathcal{O}(h^k)$ for smooth functions.
-<img src="./images/convergence_exp.png"/>
+<img src="/images/convergence_exp.png"/>
 
 We avoid error from Runge's phenomenon.
-<img src="./images/convergence_runge.png"/>
+<img src="/images/convergence_runge.png"/>
 
 Furthermore we are exact up to numerical error on polynomials of degree less than $k$.
-<img src="./images/convergence_poly.png"/>
+<img src="/images/convergence_poly.png"/>
 
 Lastly, convergence is limited by the smoothness of our function.
-<img src="./images/convergence_kink.png"/>
+<img src="/images/convergence_kink.png"/>
