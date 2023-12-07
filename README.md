@@ -34,13 +34,12 @@ Like splines, they are continuous piecewise polynomials.
 Unlike splines, they do not enforce smoothness.
 The figure below compares a function to the local interpolant (our interpolant) of degree 3 and also to a cubic spline with not-a-not boundary conditions.
 It also plots the first and second derivatives of each of these functions.
-![Not Splines](images/not_spline.png)
+![Not Splines](/images/not_spline.png)
 Note that the second derivative of the local interpolant is discontinuous at some of the breakpoints.
 This demonstrates that it is distinct from splines.
 
 We can also compare the cardinal basis for the space of interpolants to the cardinal spline basis.
-![Cardinal Basis](images/cardinal_basis.png)
-![Not Splines](images/not_spline.png)
+![Cardinal Basis](/images/cardinal_basis.png)
 We see from the cardinal basis that the local interpolant is not smooth over the breakpoints.
 It is not easy to see from this plot, but the cubic spline basis functions are supported over the entire interval.
 A consequence of this is that the interpolant over each piece depends on all of the function values over the entire interval.
