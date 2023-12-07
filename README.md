@@ -62,7 +62,7 @@ We see that convergence is roughly $\mathcal{O}(h^k)$ for smooth functions.
 <img src="images/convergence_exp.png"/>
 
 We avoid error from Runge's phenomenon.
-<img src="images/convergence_Runge.png"/>
+<img src="images/convergence_runge.png"/>
 
 Furthermore we are exact up to numerical error on polynomials of degree less than $k$.
 <img src="images/convergence_poly.png"/>
