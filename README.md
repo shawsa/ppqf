@@ -54,3 +54,18 @@ A consequence of this is that the interpolant over each piece depends on all of 
 In contrast, the cardinal basis functions for local interpolation are supported only over a continguous set of $k-$ sub domains.
 This means that an individual piece of the interpolant is only sensitive to nearby function values.
 It is also the reason for the repeated quadrature weights far from the boundary, as the cardinal basis functions are simply translates of one another.
+
+# Convergence
+I've tested convergence of the even order equally spaced quadrature formulae above on several test functions. 
+
+We see that convergence is roughly $\mathcal{O}(h^k)$ for smooth functions.
+<img src="images/convergence_exp.png"/>
+
+We avoid error from Runge's phenomenon.
+<img src="images/convergence_Runge.png"/>
+
+Furthermore we are exact up to numerical error on polynomials of degree less than $k$.
+<img src="images/convergence_poly.png"/>
+
+Lastly, convergence is limited by the smoothness of our function.
+<img src="images/convergence_kink.png"/>
