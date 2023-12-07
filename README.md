@@ -1,4 +1,4 @@
-# ppqf
+# Piecewise Polynomial Quadrature Formulae
 A family of quadrature formulae based on piecewise polynomial interpolation.
 I am not aware of this quadrature rule being previously discovered.
 Trapezoidal rule is a special case.
