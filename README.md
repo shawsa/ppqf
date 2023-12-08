@@ -115,6 +115,7 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{1285469654383}{1280987136000}$</td>
 	</tr>
 </table>
+
 This form makes it easy to compare to, for example, the [Gregory weights](https://www.colorado.edu/amath/sites/default/files/attached-files/gregory.pdf).
 
 # Piecewise Polynomial Interpolation
