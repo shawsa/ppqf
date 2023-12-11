@@ -1,8 +1,8 @@
 from itertools import pairwise, takewhile
 import numpy as np
 from sympy import integrate, latex, Matrix, Rational
-from sympy.polys.polyfuncs import interpolate
 from sympy.abc import x as x_sym
+from sympy.polys.polyfuncs import interpolate
 
 
 Number = float | Rational
