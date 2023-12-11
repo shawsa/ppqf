@@ -5,19 +5,71 @@ Trapezoidal rule is a special case.
 This is distinct from spline based quadratures.
 I haven't proven convergence orders, but I expect them to be prescribed by the stencil size parameter.
 
+# Derivation
+This is an interpolation based quadrature scheme used to approximate $\int_a^b f(x) \ dx$.
+Quadrature formula are given by a set of nodes $X = \{x_i\}_{i=1}^{N}$ and associated weights $\{w_i\}_{i=1}^N$.
+The definate integral is then approximated by 
+$$
+	\int_a^b f(x) \ dx \approx \sum_{i=1}^N w_i f(x_i).
+$$
+
+Interpolation based quadratures rely on approximating the function $f$ by a function $s$
+that interpolates $f$ at the quadrature nodes
+$$
+	f(x_i) = s(x_i) \text{ for } i=1, 2, 3, \dots N
+$$
+and then exactly integrating $s$. That is
+$$
+	\int_a^b f(x) \ dx \approx \int_a^b s(x) \ dx.
+$$
+
+We can represent this in the form above by defining *cardinal basis functions*. 
+Let $\ell_i$ be the interpolant of the delta function $f(x) = \delta(x - x_i)$.
+Then for an arbitrary function $f$, the interpolant $s$ is given as
+$$
+	s(x) = \sum_{i=1}^N f(x_i) \ell(x).
+$$
+
+Our quadrature weights are thus
+$$
+	w_i = \int_{a}^{b} \ell_i(x) \ dx.
+$$
+
+In this way, our quadrature weights are uniquely defined by our nodes and interpolation.
+
+## The piecewise polynomial interpolant
+First, we partition the domain $[a, b]$ into a set of intervals
+$$
+	\mathcal{D} = \{I_1, I_2, \dots, I_M\} = \{[a, \xi_1], [\xi_1, \xi_2], \dots, [\xi_{M-1}, b]\} 
+$$
+where the values $\xi_i$ are called break-points.
+
+For each interval, $I_i$, we associate a non-empty subset of our quadrature nodes $S_i \subset X$
+called the stencil. 
+
+Our interpolant is defined piecewise over each interval $I_i$ as the polynomial that interpolates $f$
+at the nodes in the stencil $S_i$. 
+
+
 # Some Sample QF on equally spaced points.
-For even orders, the weights are symmetric, and far enough from the boundary all weights are $\frac{1}{h}$.
+A natural set of quadrature formulae arrise for equally spaced points.
 
-For $\mathcal{O}(h^2)$:
-$\frac{1}{2h} \big[ 1 \ 2 \ 2 \ 2 \ 2 ...$
+First, choose a number of points $N$ and place them equally spaced in the interval $[a, b]$.
+Then choose an order parameter $k \ge 2$. For even orders, the break-points are chosen to
+be the quadrature nodes themselves.
+For odd orders, the break points are placed halfway between each successive pair of nodes.
+In either case the stencil for an interval is chosen to be the $k$ nearest quadrature nodes.
 
-For $\mathcal{O}(h^4)$:
-$\frac{1}{24h} \big[ 8 \ 31 \ 20 \ 25 \ 24 \ 24 \ 24 ...$
+The special case of $k=2$ gives the Trapezoidal Rule.
 
-For $\mathcal{O}(h^6)$:
-$\frac{1}{1440h} \big[ 459 \ 1982 \ 944 \ 1746 \ 1333 \ 1456 \ 1440 \ 1440 \ 1440 ...$
+Due to translational symmetries, all of the interior quadrature weights will be the constant
+$$
+	\frac{1}{h} = \frac{b-a}{N - 1}.
+$$
+It is therefore only necessary to list the weights near the boundary that differ from this value.
 
-We can present these weights in a standardized format: choose a grid to be the positive integers (so $h=1$) and only report the weights that differ from 1. We then have
+We can present these weights in a standardized format: choose a grid to be the positive integers
+(so $h=1$) and only report the weights that differ from 1. We then have
 <table>
 	<tr>
 		<td>$\mathcal{O}(2)$</td>
