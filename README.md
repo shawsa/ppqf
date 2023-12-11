@@ -24,11 +24,25 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{1}{2}$</td>
 	</tr>
 	<tr>
+		<td>$\mathcal{O}(3)$</td>
+		<td>$\frac{3}{8}$</td>
+		<td>$\frac{7}{6}$</td>
+		<td>$\frac{23}{24}$</td>
+	</tr>
+	<tr>
 		<td>$\mathcal{O}(4)$</td>
 		<td>$\frac{1}{3}$</td>
 		<td>$\frac{31}{24}$</td>
 		<td>$\frac{5}{6}$</td>
 		<td>$\frac{25}{24}$</td>
+	</tr>
+	<tr>
+		<td>$\mathcal{O}(5)$</td>
+		<td>$\frac{95}{288}$</td>
+		<td>$\frac{317}{240}$</td>
+		<td>$\frac{23}{30}$</td>
+		<td>$\frac{793}{720}$</td>
+		<td>$\frac{157}{160}$</td>
 	</tr>
 	<tr>
 		<td>$\mathcal{O}(6)$</td>
@@ -38,6 +52,16 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{97}{80}$</td>
 		<td>$\frac{1333}{1440}$</td>
 		<td>$\frac{91}{90}$</td>
+	</tr>
+	<tr>
+		<td>$\mathcal{O}(7)$</td>
+		<td>$\frac{5257}{17280}$</td>
+		<td>$\frac{22081}{15120}$</td>
+		<td>$\frac{54851}{120960}$</td>
+		<td>$\frac{103}{70}$</td>
+		<td>$\frac{89437}{120960}$</td>
+		<td>$\frac{16367}{15120}$</td>
+		<td>$\frac{23917}{24192}$</td>
 	</tr>
 	<tr>
 		<td>$\mathcal{O}(8)$</td>
@@ -51,6 +75,18 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{905}{896}$</td>
 	</tr>
 	<tr>
+		<td>$\mathcal{O}(9)$</td>
+		<td>$\frac{25713}{89600}$</td>
+		<td>$\frac{1153247}{725760}$</td>
+		<td>$\frac{130583}{3628800}$</td>
+		<td>$\frac{903527}{403200}$</td>
+		<td>$- \frac{797}{5670}$</td>
+		<td>$\frac{6244961}{3628800}$</td>
+		<td>$\frac{56621}{80640}$</td>
+		<td>$\frac{3891877}{3628800}$</td>
+		<td>$\frac{1028617}{1036800}$</td>
+	</tr>
+	<tr>
 		<td>$\mathcal{O}(10)$</td>
 		<td>$\frac{81385}{290304}$</td>
 		<td>$\frac{5982811}{3628800}$</td>
@@ -62,6 +98,20 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{4758181}{3628800}$</td>
 		<td>$\frac{6767167}{7257600}$</td>
 		<td>$\frac{14269}{14175}$</td>
+	</tr>
+	<tr>
+		<td>$\mathcal{O}(11)$</td>
+		<td>$\frac{4777223}{17418240}$</td>
+		<td>$\frac{19494601}{11404800}$</td>
+		<td>$- \frac{21664009}{45619200}$</td>
+		<td>$\frac{20082647}{5702400}$</td>
+		<td>$- \frac{357595981}{159667200}$</td>
+		<td>$\frac{101509}{24948}$</td>
+		<td>$- \frac{177536819}{159667200}$</td>
+		<td>$\frac{80938271}{39916800}$</td>
+		<td>$\frac{212182463}{319334400}$</td>
+		<td>$\frac{255314179}{239500800}$</td>
+		<td>$\frac{783809}{788480}$</td>
 	</tr>
 	<tr>
 		<td>$\mathcal{O}(12)$</td>
@@ -79,6 +129,22 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{38522153}{38320128}$</td>
 	</tr>
 	<tr>
+		<td>$\mathcal{O}(13)$</td>
+		<td>$\frac{106364763817}{402361344000}$</td>
+		<td>$\frac{681136420843}{373621248000}$</td>
+		<td>$- \frac{1401331298077}{1307674368000}$</td>
+		<td>$\frac{2832366494131}{523069747200}$</td>
+		<td>$- \frac{438200202533}{69742632960}$</td>
+		<td>$\frac{4442934458299}{435891456000}$</td>
+		<td>$- \frac{1965283}{250250}$</td>
+		<td>$\frac{3251907989573}{435891456000}$</td>
+		<td>$- \frac{125285857217}{49816166400}$</td>
+		<td>$\frac{249304895401}{104613949440}$</td>
+		<td>$\frac{820902291229}{1307674368000}$</td>
+		<td>$\frac{2775843989651}{2615348736000}$</td>
+		<td>$\frac{473293717537}{475517952000}$</td>
+	</tr>
+	<tr>
 		<td>$\mathcal{O}(14)$</td>
 		<td>$\frac{27770156197}{106748928000}$</td>
 		<td>$\frac{4910982739693}{2615348736000}$</td>
@@ -94,6 +160,24 @@ We can present these weights in a standardized format: choose a grid to be the p
 		<td>$\frac{3634010752403}{2615348736000}$</td>
 		<td>$\frac{4920175305323}{5230697472000}$</td>
 		<td>$\frac{28145907}{28028000}$</td>
+	</tr>
+	<tr>
+		<td>$\mathcal{O}(15)$</td>
+		<td>$\frac{25221445}{98402304}$</td>
+		<td>$\frac{7577074249153}{3923023104000}$</td>
+		<td>$- \frac{109758975737401}{62768369664000}$</td>
+		<td>$\frac{2619716486083}{326918592000}$</td>
+		<td>$- \frac{823993097730133}{62768369664000}$</td>
+		<td>$\frac{3652938751549}{156920924160}$</td>
+		<td>$- \frac{185364174597109}{6974263296000}$</td>
+		<td>$\frac{362611972}{13030875}$</td>
+		<td>$- \frac{406567190928929}{20922789888000}$</td>
+		<td>$\frac{5691974352499}{435891456000}$</td>
+		<td>$- \frac{11068437145699}{2510734786560}$</td>
+		<td>$\frac{2729565317047}{980755776000}$</td>
+		<td>$\frac{12392155500563}{20922789888000}$</td>
+		<td>$\frac{4149740674111}{3923023104000}$</td>
+		<td>$\frac{687122652947}{689762304000}$</td>
 	</tr>
 	<tr>
 		<td>$\mathcal{O}(16)$</td>
