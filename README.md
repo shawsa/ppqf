@@ -7,11 +7,11 @@ I haven't proven convergence orders, but I expect them to be prescribed by the s
 
 # Derivation
 This is an interpolation based quadrature scheme used to approximate $\int_a^b f(x) \ dx$.
-Quadrature formula are given by a set of nodes $X = \{x_i\}_{i=1}^{N}$ and associated weights $\{w_i\}_{i=1}^N$.
+Quadrature formula are given by a set of nodes $`X = \{x_i\}_{i=1}^{N}`$ and associated weights $\{w_i\}_{i=1}^N$.
 The definate integral is then approximated by 
-$$
+$$\begin{align*}
 	\int_a^b f(x) \ dx \approx \sum_{i=1}^N w_i f(x_i).
-$$
+\end{align*}$$
 
 Interpolation based quadratures rely on approximating the function $f$ by a function $s$
 that interpolates $f$ at the quadrature nodes
