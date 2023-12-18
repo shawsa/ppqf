@@ -71,9 +71,11 @@ In either case the stencil for an interval is chosen to be the $k$ nearest quadr
 The special case of $k=2$ gives the Trapezoidal Rule.
 
 Due to translational symmetries, all of the interior quadrature weights will be the constant
+
 $$
 	\frac{1}{h} = \frac{b-a}{N - 1}.
 $$
+
 It is therefore only necessary to list the weights near the boundary that differ from this value.
 
 We can present these weights in a standardized format: choose a grid to be the positive integers
