@@ -6,19 +6,23 @@ This is distinct from spline based quadratures.
 I haven't proven convergence orders, but I expect them to be prescribed by the stencil size parameter.
 
 # Derivation
-This is an interpolation based quadrature scheme used to approximate $\int_a^b f(x) \ dx$.
-Quadrature formula are given by a set of nodes $`X = \{x_i\}_{i=1}^{N}`$ and associated weights $\{w_i\}_{i=1}^N$.
+This is an interpolation based quadrature scheme used to approximate $`\int_a^b f(x) \ dx`$.
+Quadrature formula are given by a set of nodes $`X = \{x_i\}_{i=1}^{N}`$ and associated weights $`\{w_i\}_{i=1}^N`$.
 The definate integral is then approximated by 
-$$\begin{align*}
+
+$$
 	\int_a^b f(x) \ dx \approx \sum_{i=1}^N w_i f(x_i).
-\end{align*}$$
+$$
 
 Interpolation based quadratures rely on approximating the function $f$ by a function $s$
 that interpolates $f$ at the quadrature nodes
+
 $$
 	f(x_i) = s(x_i) \text{ for } i=1, 2, 3, \dots N
 $$
+
 and then exactly integrating $s$. That is
+
 $$
 	\int_a^b f(x) \ dx \approx \int_a^b s(x) \ dx.
 $$
@@ -26,11 +30,13 @@ $$
 We can represent this in the form above by defining *cardinal basis functions*. 
 Let $\ell_i$ be the interpolant of the delta function $f(x) = \delta(x - x_i)$.
 Then for an arbitrary function $f$, the interpolant $s$ is given as
+
 $$
 	s(x) = \sum_{i=1}^N f(x_i) \ell(x).
 $$
 
 Our quadrature weights are thus
+
 $$
 	w_i = \int_{a}^{b} \ell_i(x) \ dx.
 $$
@@ -39,9 +45,11 @@ In this way, our quadrature weights are uniquely defined by our nodes and interp
 
 ## The piecewise polynomial interpolant
 First, we partition the domain $[a, b]$ into a set of intervals
+
 $$
 	\mathcal{D} = \{I_1, I_2, \dots, I_M\} = \{[a, \xi_1], [\xi_1, \xi_2], \dots, [\xi_{M-1}, b]\} 
 $$
+
 where the values $\xi_i$ are called break-points.
 
 For each interval, $I_i$, we associate a non-empty subset of our quadrature nodes $S_i \subset X$
