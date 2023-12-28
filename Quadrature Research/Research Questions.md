@@ -1,0 +1,11 @@
+- Is this method indeed new?
+- What methods does this generalize?
+	- Riemann Integration
+	- Trapezoidal Rule
+	- Newton-Cotes
+	- Gauss
+	- Gregory
+		- What is the relationship between Gregory and Euler/Maclaurin
+- What is the state-of-the-art in 1D quadrature methods?
+	- Is it [[Adaptive Quadrature]]?
+- What are important problems in current quadrature research?
