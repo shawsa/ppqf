@@ -18,48 +18,15 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "346a40100206f75a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Numerical Stokes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6776812243554a8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Papers/Gunderman et al (2021) - High-Accuracy Mesh-Free Quadrature for Trimmed Parametric Surfaces and Volumes..md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "326db7f2e5e52ea3",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
-        "id": "bdb0666343d7849d",
+        "id": "93549c26ac66bb86",
         "type": "tabs",
         "children": [
           {
-            "id": "451575a5bb9d9d65",
+            "id": "326db7f2e5e52ea3",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -180,8 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,14 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "451575a5bb9d9d65",
+  "active": "7b6e8abd9d0886df",
   "lastOpenFiles": [
-    "Papers/Gunderman et al (2021) - High-Accuracy Mesh-Free Quadrature for Trimmed Parametric Surfaces and Volumes..md",
-    "Numerical Stokes.md",
+    "Adaptive Quadrature.md",
     "Research Questions.md",
+    "Numerical Stokes.md",
+    "Papers/Gunderman et al (2021) - High-Accuracy Mesh-Free Quadrature for Trimmed Parametric Surfaces and Volumes..md",
     "Papers/Gonnet (2012) - A review of error estimation in adaptive quadrature.md",
     "Adaptive Quadrature Error Estimation.md",
-    "Adaptive Quadrature.md",
     "Untitled",
     "Papers"
   ]
