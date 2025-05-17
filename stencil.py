@@ -1,6 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+plt.rcParams.update(
+    {
+        "font.size": 12,
+        "text.usetex": True,
+        "mathtext.fontset": "stix",
+        "font.family": "STIXGeneral",
+    }
+)
+
 xs = np.arange(20)
 
 line1 = 0
